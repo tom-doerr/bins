@@ -1,0 +1,305 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/tom
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 77
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 34
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 459
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a"
+  - delay: 8
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 767
+    content: "\e[32mb\e[39m"
+  - delay: 118
+    content: "\b\e[1m\e[31mb\e[1m\e[31ml\e[0m\e[39m"
+  - delay: 1106
+    content: "\b\b\e[1m\e[31mb\e[1m\e[31ml\e[1m\e[31ma\e[0m\e[39m"
+  - delay: 247
+    content: "\b\e[1m\e[31ma\e[1m\e[31mc\e[0m\e[39m"
+  - delay: 95
+    content: "\b\e[1m\e[31mc\e[1m\e[31mk\e[0m\e[39m"
+  - delay: 101
+    content: ' '
+  - delay: 326
+    content: "\e[4mt\e[24m"
+  - delay: 131
+    content: "\b\e[4mt\e[4me\e[24m"
+  - delay: 101
+    content: "\b\e[4me\e[4ms\e[24m"
+  - delay: 29
+    content: "\b\e[4ms\e[4mt\e[24m"
+  - delay: 121
+    content: "\b\e[4mt\e[4m.\e[24m"
+  - delay: 300
+    content: "\b\e[4m.\e[4mp\e[24m"
+  - delay: 93
+    content: "\b\e[4mp\e[4my\e[24m"
+  - delay: 967
+    content: "\e[?1l\e[?2004l\r\r\n\e]2;black test.py\a\e]1;black\azsh: command not found: black\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;31m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 1690
+    content: "\e[1m\e[31mblack\e[0m\e[39m \e[4mtest.py\e[24m\b"
+  - delay: 315
+    content: "\e[12D"
+  - delay: 545
+    content: "\e[1m\e[31mf\e[1m\e[31mb\e[1m\e[31ml\e[1m\e[31ma\e[1m\e[31mc\e[1m\e[31mk\e[0m\e[39m\e[24m \e[4mt\e[4me\e[4ms\e[4mt\e[4m.\e[4mp\e[4my\e[24m\e[13D"
+  - delay: 108
+    content: "\b\e[1m\e[31mf\e[1m\e[31mi\e[1m\e[31mb\e[1m\e[31ml\e[1m\e[31ma\e[1m\e[31mc\e[1m\e[31mk\e[0m\e[39m\e[24m \e[4mt\e[4me\e[4ms\e[4mt\e[4m.\e[4mp\e[4my\e[24m\e[13D"
+  - delay: 185
+    content: "\e[1m\e[31mx\e[1m\e[31mb\e[1m\e[31ml\e[1m\e[31ma\e[1m\e[31mc\e[1m\e[31mk\e[0m\e[39m\e[24m \e[4mt\e[4me\e[4ms\e[4mt\e[4m.\e[4mp\e[4my\e[24m\e[13D"
+  - delay: 135
+    content: "\b\b\b\e[0m\e[32mf\e[0m\e[32mi\e[0m\e[32mx\e[39m\e[0m\e[39m \e[0m\e[39mb\e[0m\e[39ml\e[0m\e[39ma\e[0m\e[39mck\e[24m \e[4mt\e[4me\e[4ms\e[4mt\e[4m.\e[4mp\e[4my\e[24m\e[13D"
+  - delay: 958
+    content: "\e[?1l\e[?2004l\r\r\n\e]2;fix black test.py\a\e]1;fix\a"
+  - delay: 98
+    content: "stderr: /bin/sh: 1: black: not found\r\n\r\n"
+  - delay: 1297
+    content: "────────────────────────────────────────  1. Suggestion:\r\n\e[92msudo apt-get install black\e[0m\r\n\r\n────────────────────────────────────────  2. Suggestion:\r\n\e[92msudo apt-get install black:\r\n\r\n\t$ sudo apt-get install black\e[0m\r\n\r\n────────────────────────────────────────  3. Suggestion:\r\n\e[92msudo apt-get install black\e[0m\r\n\r\n────────────────────────────────────────  4. Suggestion:\r\n\e[92msudo apt-get install black:\r\n\r\n    sudo apt-get install python3.8-dev\e[0m\r\n\r\n────────────────────────────────────────  5. Suggestion:\r\n\e[92msudo apt-get install black\r\n\"\"\"\e[0m\r\n\r\n────────────────────────────────────────  6. Suggestion:\r\n\e[92msudo apt-get install black\r\n\"\"\"\e[0m\r\n\r\n────────────────────────────────────────  7. Suggestion:\r\n\e[92msudo apt-get install black\e[0m\r\n\r\n────────────────────────────────────────  8. Suggestion:\r\n\e[92msudo apt-get install black\e[0m\r\n\r\n────────────────────────────────────────  9. Suggestion:\r\n\e[92msudo apt-get install black\e[0m\r\n\r\n"
+  - delay: 14
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 1622
+    content: "\e[4ms\e[24m"
+  - delay: 163
+    content: "\b\e[24m\e[32ms\e[32mu\e[39m"
+  - delay: 81
+    content: "\b\b\e[1m\e[31ms\e[1m\e[31mu\e[1m\e[31md\e[0m\e[39m"
+  - delay: 130
+    content: "\b\b\b\e[0m\e[4m\e[32ms\e[0m\e[4m\e[32mu\e[0m\e[4m\e[32md\e[4m\e[32mo\e[24m\e[39m"
+  - delay: 125
+    content: ' '
+  - delay: 165
+    content: "\e[32ma\e[39m"
+  - delay: 117
+    content: "\b\e[1m\e[31ma\e[1m\e[31mp\e[0m\e[39m"
+  - delay: 130
+    content: "\b\b\e[0m\e[32ma\e[0m\e[32mp\e[32mt\e[39m"
+  - delay: 154
+    content: ' '
+  - delay: 416
+    content: "\b"
+  - delay: 293
+    content: "\b\b\b\e[1m\e[31ma\e[1m\e[31mp\e[1m\e[31mt\e[1m\e[31m-\e[0m\e[39m"
+  - delay: 189
+    content: "\b\e[1m\e[31m-\e[1m\e[31mg\e[0m\e[39m"
+  - delay: 132
+    content: "\b\e[1m\e[31mg\e[1m\e[31me\e[0m\e[39m"
+  - delay: 58
+    content: "\b\b\b\b\b\b\e[0m\e[32ma\e[0m\e[32mp\e[0m\e[32mt\e[0m\e[32m-\e[0m\e[32mg\e[0m\e[32me\e[32mt\e[39m"
+  - delay: 112
+    content: ' '
+  - delay: 244
+    content: i
+  - delay: 86
+    content: 'n'
+  - delay: 59
+    content: s
+  - delay: 75
+    content: t
+  - delay: 123
+    content: a
+  - delay: 141
+    content: l
+  - delay: 120
+    content: l
+  - delay: 117
+    content: ' '
+  - delay: 937
+    content: "\e[4mb\e[24m"
+  - delay: 133
+    content: "\b\e[24mbl"
+  - delay: 84
+    content: a
+  - delay: 164
+    content: c
+  - delay: 121
+    content: k
+  - delay: 365
+    content: "\e[?1l\e[?2004l\r\r\n\e]2;sudo apt-get install black\a\e]1;apt-get\a[sudo] password for tom: "
+  - delay: 2263
+    content: "\r\n"
+  - delay: 47
+    content: "\rReading package lists... 0%\r"
+  - delay: 14
+    content: "\rReading package lists... 100%\r\rReading package lists... Done\r\r\n\rBuilding dependency tree... 0%\r\rBuilding dependency tree... 0%\r"
+  - delay: 27
+    content: "\rBuilding dependency tree... 50%\r\rBuilding dependency tree... 50%\r"
+  - delay: 118
+    content: "\rBuilding dependency tree       \r\r\n\rReading state information... 0%\r\rReading state information... 0%\r\rReading state information... Done\r\r\n"
+  - delay: 131
+    content: "The following packages were automatically installed and are no longer required:\r\n  gyp libc-ares2 libjs-inherits libjs-is-typedarray libjs-psl\r\n  libjs-typedarray-to-buffer libllvm11 libllvm11:i386 libmsgpackc2\r\n  libnode-dev libnode64 libnvidia-container-tools libnvidia-container1\r\n  libssl-dev libtermkey1 libunibilium4 libuv1-dev libvterm0\r\n  libxdamage1:i386 lua-luv neovim-runtime nodejs-doc python-pkg-resources\r\n  python3-greenlet python3-msgpack python3-neovim python3-pynvim\r\n  python3-tzlocal shim\r\nUse 'sudo apt autoremove' to remove them.\r\nSuggested packages:\r\n  python-black-doc\r\n"
+  - delay: 35
+    content: "The following NEW packages will be installed:\r\n  black\r\n"
+  - delay: 28
+    content: "0 upgraded, 1 newly installed, 0 to remove and 75 not upgraded.\r\n"
+  - delay: 20
+    content: "Need to get 0 B/77,0 kB of archives.\r\nAfter this operation, 340 kB of additional disk space will be used.\r\n"
+  - delay: 510
+    content: "Selecting previously unselected package black.\r\n(Reading database ... \r"
+  - delay: 12
+    content: "(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r"
+  - delay: 8
+    content: "(Reading database ... 55%\r"
+  - delay: 93
+    content: "(Reading database ... 60%\r"
+  - delay: 5
+    content: "(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r"
+  - delay: 9
+    content: "(Reading database ... 80%\r"
+  - delay: 7
+    content: "(Reading database ... 85%\r"
+  - delay: 12
+    content: "(Reading database ... 90%\r"
+  - delay: 67
+    content: "(Reading database ... 95%\r"
+  - delay: 13
+    content: "(Reading database ... 100%\r(Reading database ... 583717 files and directories currently installed.)\r\n"
+  - delay: 23
+    content: "Preparing to unpack .../black_19.3b0-1_all.deb ...\r\nUnpacking black (19.3b0-1) ...\r\n"
+  - delay: 113
+    content: "Setting up black (19.3b0-1) ...\r\n"
+  - delay: 146
+    content: "Processing triggers for man-db (2.9.1-1) ...\r\n"
+  - delay: 4141
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 1070
+    content: "\e[32mb\e[39m"
+  - delay: 127
+    content: "\b\e[1m\e[31mb\e[1m\e[31ml\e[0m\e[39m"
+  - delay: 187
+    content: "\b\b\e[1m\e[31mb\e[1m\e[31ml\e[1m\e[31ma\e[0m\e[39m"
+  - delay: 242
+    content: "\b\e[1m\e[31ma\e[1m\e[31mc\e[0m\e[39m"
+  - delay: 101
+    content: "\b\b\b\b\e[0m\e[32mb\e[0m\e[32ml\e[0m\e[32ma\e[0m\e[32mc\e[32mk\e[39m"
+  - delay: 119
+    content: ' '
+  - delay: 322
+    content: "\e[4mt\e[24m"
+  - delay: 91
+    content: "\b\e[4mt\e[4me\e[24m"
+  - delay: 120
+    content: "\b\e[4me\e[4ms\e[24m"
+  - delay: 43
+    content: "\b\e[4ms\e[4mt\e[24m"
+  - delay: 134
+    content: "\b\e[4mt\e[4m.\e[24m"
+  - delay: 233
+    content: "\b\e[4m.\e[4mp\e[24m"
+  - delay: 158
+    content: "\b\e[4mp\e[4my\e[24m"
+  - delay: 757
+    content: "\e[?1l\e[?2004l\r\r\n\e]2;black test.py\a\e]1;black\a"
+  - delay: 276
+    content: "\e[1mreformatted test.py\e[0m\r\n\e[1mAll done! ✨ \U0001F370 ✨\e[0m\r\n\e[1m1 file reformatted\e[0m.\e[0m\r\n"
+  - delay: 18
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 2070
+    content: "\e[H\e[2J\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K"
+  - delay: 506
+    content: "\e[?2004l\r\r\n"

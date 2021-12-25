@@ -1,0 +1,279 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/tom
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 77
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 34
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 474
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a"
+  - delay: 5
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 802
+    content: "\e[4mp\e[24m"
+  - delay: 305
+    content: "\b\e[24m\e[1m\e[31mp\e[1m\e[31my\e[0m\e[39m"
+  - delay: 446
+    content: "\b\b\e[1m\e[31mp\e[1m\e[31my\e[1m\e[31mt\e[0m\e[39m"
+  - delay: 125
+    content: "\b\e[1m\e[31mt\e[1m\e[31mh\e[0m\e[39m"
+  - delay: 97
+    content: "\b\e[1m\e[31mh\e[1m\e[31mo\e[0m\e[39m"
+  - delay: 122
+    content: "\b\b\b\b\b\e[0m\e[32mp\e[0m\e[32my\e[0m\e[32mt\e[0m\e[32mh\e[0m\e[32mo\e[32mn\e[39m"
+  - delay: 216
+    content: "\b\e[32mn\e[32m3\e[39m"
+  - delay: 723
+    content: ' '
+  - delay: 280
+    content: "\e[4mt\e[24m"
+  - delay: 117
+    content: "\b\e[4mt\e[4me\e[24m"
+  - delay: 121
+    content: "\b\e[4me\e[4ms\e[24m"
+  - delay: 46
+    content: "\b\e[4ms\e[4mt\e[24m"
+  - delay: 169
+    content: "\b\e[4mt\e[4m.\e[24m"
+  - delay: 216
+    content: "\b\e[4m.\e[4mp\e[24m"
+  - delay: 69
+    content: "\b\e[4mp\e[4my\e[24m"
+  - delay: 815
+    content: "\e[?1l\e[?2004l\r\r\n\e]2;python3 test.py\a\e]1;python3\a"
+  - delay: 112
+    content: "Traceback (most recent call last):\r\n  File \"test.py\", line 3, in <module>\r\n    import skimage\r\nModuleNotFoundError: No module named 'skimage'\r\n"
+  - delay: 9
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;31m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 1641
+    content: "\e[32mpython3\e[39m \e[4mtest.py\e[24m\b"
+  - delay: 287
+    content: "\e[14D"
+  - delay: 580
+    content: "\e[1m\e[31mf\e[1m\e[31mp\e[1m\e[31my\e[1m\e[31mt\e[1m\e[31mh\e[1m\e[31mo\e[1m\e[31mn\e[1m\e[31m3\e[0m\e[39m\e[24m \e[4mt\e[4me\e[4ms\e[4mt\e[4m.\e[4mp\e[4my\e[24m\e[15D"
+  - delay: 86
+    content: "\b\e[1m\e[31mf\e[1m\e[31mi\e[1m\e[31mp\e[1m\e[31my\e[1m\e[31mt\e[1m\e[31mh\e[1m\e[31mo\e[1m\e[31mn\e[1m\e[31m3\e[0m\e[39m\e[24m \e[4mt\e[4me\e[4ms\e[4mt\e[4m.\e[4mp\e[4my\e[24m\e[15D"
+  - delay: 201
+    content: "\e[1m\e[31mx\e[1m\e[31mp\e[1m\e[31my\e[1m\e[31mt\e[1m\e[31mh\e[1m\e[31mo\e[1m\e[31mn\e[1m\e[31m3\e[0m\e[39m\e[24m \e[4mt\e[4me\e[4ms\e[4mt\e[4m.\e[4mp\e[4my\e[24m\e[15D"
+  - delay: 108
+    content: "\b\b\b\e[0m\e[32mf\e[0m\e[32mi\e[0m\e[32mx\e[39m\e[0m\e[39m \e[0m\e[39mp\e[0m\e[39my\e[0m\e[39mt\e[0m\e[39mh\e[0m\e[39mo\e[0m\e[39mn3\e[24m \e[4mt\e[4me\e[4ms\e[4mt\e[4m.\e[4mp\e[4my\e[24m\e[15D"
+  - delay: 371
+    content: "\e[?1l\e[?2004l\r\r\n\e]2;fix python3 test.py\a\e]1;fix\a"
+  - delay: 197
+    content: "stderr: Traceback (most recent call last):\r\n  File \"test.py\", line 3, in <module>\r\n    import skimage\r\nModuleNotFoundError: No module named 'skimage'\r\n\r\n"
+  - delay: 2657
+    content: "────────────────────────────────────────  1. Suggestion:\r\n\e[92mpip install scikit-image==0.14.* --force-reinstall\e[0m\r\n\r\n────────────────────────────────────────  2. Suggestion:\r\n\e[92mGo to your Anaconda Prompt, and type in the following command: conda install scikit-image\r\n\"\"\"\r\n\r\n\r\n# Import image data from MNIST database. This is a handwritten digit database where images are 28x28 pixels large. \r\nfrom keras.datasets import mnist #importing libraries for loading MINST dataset from Keras library \r\n\r\n                                #this dataset contains 60,000 training set of digits and 10,0000 test set\e[0m\r\n\r\n────────────────────────────────────────  3. Suggestion:\r\n\e[92mInstall scikit-image library and try again.\r\n'''\e[0m\r\n\r\n────────────────────────────────────────  4. Suggestion:\r\n\e[92m$ pip install scikit-image\e[0m\r\n\r\n────────────────────────────────────────  5. Suggestion:\r\n\e[92mpip install scikit-image\e[0m\r\n\r\n────────────────────────────────────────  6. Suggestion:\r\n\e[92mGo to the official website of skimage and download their wheel file. Then, install it using pip.\e[0m\r\n\r\n────────────────────────────────────────  7. Suggestion:\r\n\e[92msudo apt-get install python3-skimage\e[0m\r\n\r\n────────────────────────────────────────  8. Suggestion:\r\n\e[92mGo to your home directory: cd ~\r\nThen run the following command (you may need to use sudo): python -m pip install scikit-image --user\r\n\r\n\r\n\r\n\r\n'''\e[0m\r\n\r\n────────────────────────────────────────  9. Suggestion:\r\n\e[92m$ pip install scikit-image\e[0m\r\n\r\n"
+  - delay: 13
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 1539
+    content: "\e[4mp\e[24m"
+  - delay: 196
+    content: "\b\e[24m\e[1m\e[31mp\e[1m\e[31mi\e[0m\e[39m"
+  - delay: 59
+    content: "\b\b\e[0m\e[32mp\e[0m\e[32mi\e[32mp\e[39m"
+  - delay: 814
+    content: ' '
+  - delay: 147
+    content: i
+  - delay: 87
+    content: 'n'
+  - delay: 113
+    content: s
+  - delay: 76
+    content: t
+  - delay: 99
+    content: a
+  - delay: 156
+    content: l
+  - delay: 137
+    content: l
+  - delay: 129
+    content: ' '
+  - delay: 309
+    content: "\e[4ms\e[24m"
+  - delay: 269
+    content: "\b\e[4ms\e[4mc\e[24m"
+  - delay: 170
+    content: "\b\b\e[24ms\e[24mci"
+  - delay: 183
+    content: k
+  - delay: 170
+    content: i
+  - delay: 109
+    content: t
+  - delay: 384
+    content: '-'
+  - delay: 319
+    content: i
+  - delay: 49
+    content: m
+  - delay: 134
+    content: a
+  - delay: 94
+    content: g
+  - delay: 103
+    content: e
+  - delay: 677
+    content: "\e[?1l\e[?2004l\r\r\n\e]2;pip3 install scikit-image\a\e]1;pip\a"
+  - delay: 1083
+    content: "Collecting scikit-image\r\n"
+  - delay: 27
+    content: "  Using cached scikit_image-0.19.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.8 MB)\r\n"
+  - delay: 256
+    content: "Requirement already satisfied: scipy>=1.4.1 in ./.local/lib/python3.8/site-packages (from scikit-image) (1.4.1)\r\nRequirement already satisfied: tifffile>=2019.7.26 in ./.local/lib/python3.8/site-packages (from scikit-image) (2021.11.2)\r\nRequirement already satisfied: networkx>=2.2 in ./.local/lib/python3.8/site-packages (from scikit-image) (2.5)\r\n"
+  - delay: 10
+    content: "Requirement already satisfied: PyWavelets>=1.1.1 in ./.local/lib/python3.8/site-packages (from scikit-image) (1.2.0)\r\nRequirement already satisfied: packaging>=20.0 in ./.local/lib/python3.8/site-packages (from scikit-image) (20.4)\r\nRequirement already satisfied: numpy>=1.17.0 in ./.local/lib/python3.8/site-packages (from scikit-image) (1.21.2)\r\nRequirement already satisfied: pillow!=7.1.0,!=7.1.1,!=8.3.0,>=6.1.0 in /usr/lib/python3/dist-packages (from scikit-image) (7.0.0)\r\nRequirement already satisfied: imageio>=2.4.1 in ./.local/lib/python3.8/site-packages (from scikit-image) (2.9.0)\r\n"
+  - delay: 6
+    content: "Requirement already satisfied: decorator>=4.3.0 in ./.local/lib/python3.8/site-packages (from networkx>=2.2->scikit-image) (4.4.2)\r\nRequirement already satisfied: six in /usr/lib/python3/dist-packages (from packaging>=20.0->scikit-image) (1.14.0)\r\nRequirement already satisfied: pyparsing>=2.0.2 in /usr/lib/python3/dist-packages (from packaging>=20.0->scikit-image) (2.4.6)\r\n"
+  - delay: 804
+    content: "Installing collected packages: scikit-image\r\n"
+  - delay: 605
+    content: "Successfully installed scikit-image-0.19.1\r\n"
+  - delay: 65
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 1681
+    content: "\e[4mp\e[24m"
+  - delay: 280
+    content: "\b\e[24m\e[1m\e[31mp\e[1m\e[31my\e[0m\e[39m"
+  - delay: 205
+    content: "\b\b\e[1m\e[31mp\e[1m\e[31my\e[1m\e[31mt\e[0m\e[39m"
+  - delay: 36
+    content: "\b\e[1m\e[31mt\e[1m\e[31mh\e[0m\e[39m"
+  - delay: 90
+    content: "\b\e[1m\e[31mh\e[1m\e[31mo\e[0m\e[39m"
+  - delay: 172
+    content: "\b\b\b\b\b\e[0m\e[32mp\e[0m\e[32my\e[0m\e[32mt\e[0m\e[32mh\e[0m\e[32mo\e[32mn\e[39m"
+  - delay: 501
+    content: "\b\e[32mn\e[32m3\e[39m"
+  - delay: 936
+    content: ' '
+  - delay: 522
+    content: "\e[4mt\e[24m"
+  - delay: 213
+    content: "\b\e[4mt\e[4me\e[24m"
+  - delay: 130
+    content: "\b\e[4me\e[4ms\e[24m"
+  - delay: 49
+    content: "\b\e[4ms\e[4mt\e[24m"
+  - delay: 173
+    content: "\b\e[4mt\e[4m.\e[24m"
+  - delay: 242
+    content: "\b\e[4m.\e[4mp\e[24m"
+  - delay: 146
+    content: "\b\e[4mp\e[4my\e[24m"
+  - delay: 439
+    content: "\e[?1l\e[?2004l\r\r\n\e]2;python3 test.py\a\e]1;python3\a"
+  - delay: 172
+    content: "Hello World!\r\n"
+  - delay: 19
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
+  - delay: 2406
+    content: "\e[H\e[2J\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36m~\e[00m \e[K"
+  - delay: 401
+    content: "\e[?2004l\r\r\n"
