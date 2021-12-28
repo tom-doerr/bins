@@ -143,7 +143,7 @@ records:
     content: c
   - delay: 1242
     content: "\e[?1l\e[?2004l\r\r\n\e]2;mkdir jkl/abc\a\e]1;mkdir\amkdir: cannot create directory ‘jkl/abc’: No such file or directory\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                            \r \r\e]2;tom@desktop-20-3:~\a\e]1;~\a\r\e[0m\e[27m\e[24m\e[J\e[01;31m➜  \e[36m~\e[00m \e[K\e[?1h\e[?2004h"
-  - delay: 1510
+  - delay: 2510
     content: "\e[32mmkdir\e[39m jkl/abc\b"
   - delay: 311
     content: "\e[12D"
