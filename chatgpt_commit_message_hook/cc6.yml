@@ -1,0 +1,447 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/tom/test/zsh_codex
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 90
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 26
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 540
+    content: "\e[?2004h\e]0;tom@tom-ThinkPad-X1-Carbon-Gen-9: ~/test/zsh_codex\atom@tom-ThinkPad-X1-Carbon-Gen-9:~/test/zsh_codex$ "
+  - delay: 1111
+    content: v
+  - delay: 148
+    content: i
+  - delay: 40
+    content: ' '
+  - delay: 287
+    content: c
+  - delay: 217
+    content: r
+  - delay: 416
+    content: 'eate_completion.py '
+  - delay: 768
+    content: "\r\n\e[?2004l\r"
+  - delay: 10
+    content: "\e[?1049h\e[22;0t\e[?1h\e[H\e[2J\e]11;?\a\e[?2004h\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e(B\e[m\e[H\e[2J\e[?1004h\e[?25h\e[?25l\e]112\a\e[1 q\e]112\a\e[1 q\e[38;5;223m\e[48;5;235m                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \r\n                                                                                          \e[H"
+  - delay: 370
+    content: "\e(B\e[m\e[38;5;245m#!/usr/bin/env python3\e(B\e[m\e[38;5;223m\e[K\r\n\e[K\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m openai\e[K\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m sys\e[K\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m os\e[K\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m configparser\e[K\r\n\e[K\nSTREAM = \e(B\e[m\e[38;5;208mFalse\e(B\e[m\e[38;5;223m\e[K\r\n\e[K\n\e[K\n\e(B\e[m\e[38;5;245m# Get config dir from environment or default to ~/.config\e(B\e[m\e[38;5;223m\e[K\r\nCONFIG_DIR = os.getenv(\e(B\e[m\e[38;5;142m'XDG_CONFIG_HOME'\e(B\e[m\e[38;5;223m, os.path.expanduser(\e(B\e[m\e[38;5;142m'~/.config'\e(B\e[m\e[38;5;223m))\e[K\r\n\e(B\e[0;7m\e[38;5;214m\e[48;5;235mAPI_KEYS_LOCATION\e(B\e[m\e[38;5;223m = os.path.join(CONFIG_DIR, \e(B\e[m\e[38;5;142m'openaiapirc'\e(B\e[m\e[38;5;223m)\e[K\r\n\e[K\n\e(B\e[m\e[38;5;245m# Read the organization_id and secret_key from the ini file ~/.config/openaiapirc\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# The format is:\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# [openai]\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# organization_id=<your organization ID>\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# secret_key=<your secret key>\e(B\e[m\e[38;5;223m\e[K\r\n\e[K\n\e(B\e[m\e[38;5;245m# If you don't see your organization ID in the file you can get it from the\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# OpenAI web site: https://openai.com/organizations\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;167mdef\e(B\e[m\e[38;5;223m \e(B\e[m\e[38;5;108mcreate_template_ini_file\e(B\e[m\e[38;5;223m():\e[K\r\n    \e(B\e[m\e[38;5;142m\"\"\"\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[0;7m\e[38;5;239m\e[48;5;223mcreate_completion.py                                                                      \e]112\a\e[2 q\e[H\e(B\e[m\e[38;5;245m#!/usr/bin/env python3\e(B\e[m\e[38;5;223m\e[K\r\n\e[K\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m openai\e[K\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m sys\e[K\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m os\e[K\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m configparser\e[K\r\n\e[K\nSTREAM = \e(B\e[m\e[38;5;208mFalse\e(B\e[m\e[38;5;223m\e[K\r\n\e[K\n\e[K\n\e(B\e[m\e[38;5;245m# Get config dir from environment or default to ~/.config\e(B\e[m\e[38;5;223m\e[K\r\nCONFIG_DIR = os.getenv(\e(B\e[m\e[38;5;142m'XDG_CONFIG_HOME'\e(B\e[m\e[38;5;223m, os.path.expanduser(\e(B\e[m\e[38;5;142m'~/.config'\e(B\e[m\e[38;5;223m))\e[K\r\n\e(B\e[0;7m\e[38;5;214m\e[48;5;235mAPI_KEYS_LOCATION\e(B\e[m\e[38;5;223m = os.path.join(CONFIG_DIR, \e(B\e[m\e[38;5;142m'openaiapirc'\e(B\e[m\e[38;5;223m)\e[K\r\n\e[K\n\e(B\e[m\e[38;5;245m# Read the organization_id and secret_key from the ini file ~/.config/openaiapirc\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# The format is:\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# [openai]\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# organization_id=<your organization ID>\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# secret_key=<your secret key>\e(B\e[m\e[38;5;223m\e[K\r\n\e[K\n\e(B\e[m\e[38;5;245m# If you don't see your organization ID in the file you can get it from the\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;245m# OpenAI web site: https://openai.com/organizations\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[m\e[38;5;167mdef\e(B\e[m\e[38;5;223m \e(B\e[m\e[38;5;108mcreate_template_ini_file\e(B\e[m\e[38;5;223m():\e[K\r\n    \e(B\e[m\e[38;5;142m\"\"\"\e(B\e[m\e[38;5;223m\e[K\r\n\e(B\e[0;7m\e[38;5;239m\e[48;5;223mcreate_completion.py                                                                      \e(B\e[m\e[38;5;223m\r\n\e[J\e[H\e[?25h"
+  - delay: 570
+    content: "\e[?25l\e[26;80Hj         \e[H\e[?25h\e[?25l\e[26;80H \r\e[24A\e[?25h"
+  - delay: 199
+    content: "\e[?25l\e[26;80Hj\r\e[24A\e[?25h\e[?25l\e[26;80H \r\e[23A\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hj\r\e[23A\e[?25h\e[?25l\e[26;80H \r\e[22A\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hj\r\e[22A\e[?25h\e[?25l\e[26;80H \r\e[21A\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hj\r\e[21A\e[?25h\e[?25l\e[26;80H \r\e[20A\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hj\r\e[20A\e[?25h\e[?25l\e[26;80H \r\e[19A\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hj\r\e[19A\e[?25h\e[?25l\e[26;80H \r\e[18A\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hj\r\e[18A\e[?25h\e[?25l\e[26;80H \r\e[17A\e[?25h"
+  - delay: 43
+    content: "\e[?25l\e[26;80Hl\r\e[17A\e[?25h\e[?25l\e[26;80H \e[9;2H\e[?25h"
+  - delay: 200
+    content: "\e[?25l\e[26;80Hl\e[9;2H\e[?25h\e[?25l\e[26;80H \e[9;3H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[9;3H\e[?25h\e[?25l\e[26;80H \e[9;4H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[9;4H\e[?25h\e[?25l\e[26;80H \e[9;5H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[9;5H\e[?25h\e[?25l\e[26;80H \e[9;6H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[9;6H\e[?25h\e[?25l\e[26;80H \e[9;7H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[9;7H\e[?25h\e[?25l\e[26;80H \e[9;8H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[9;8H\e[?25h\e[?25l\e[26;80H \e[9;9H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[9;9H\e[?25h\e[?25l\e[26;80H \e[9;10H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hl\e[9;10H\e[?25h\e[?25l\e[26;80H \e[9;11H\e[?25h"
+  - delay: 99
+    content: "\e[?25l\e[26;80Hk\e[9;11H\e[?25h\e[?25l\e[26;80H \e[8;11H\e[?25h"
+  - delay: 243
+    content: "\e[?25l\e[26;80Hh\e[8;11H\e[?25h\e[?25l\e[26;80H \e[8;10H\e[?25h"
+  - delay: 406
+    content: "\e[?25l\e[26;80HC\e[8;10H\e[?25h\e[?25l\e[26;80H \e]112\a\e[4 q\e[8;10H\e[?25h\e[?25l\e[26;80Hc$\e[8;10H\e[?25h\e[?25l\e[26;80H  \e]112\a\e[6 q\e[8;10H\e[?25h\e[?25l\r\e[18B\e(B\e[0;1m\e[38;5;214m-- INSERT --\e(B\e[m\e[38;5;223m\e[K\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[8;10H\e[5X\e[?25h"
+  - delay: 525
+    content: "\e[?25lT\e[?25h"
+  - delay: 295
+    content: "\e[?25lr\e[?25h"
+  - delay: 164
+    content: "\e[?25lu\e[?25h"
+  - delay: 64
+    content: "\e[?25l\b\b\b\e(B\e[m\e[38;5;208mTrue\e[?25h"
+  - delay: 108
+    content: "\e[?25l\e(B\e[m\e[38;5;223m\r\e[18B\e[12X\e]112\a\e[2 q\e[8;13H\e[?25h"
+  - delay: 879
+    content: "\e[?25l\e[26;80H\\\e[8;13H\e[?25h"
+  - delay: 147
+    content: "\e[?25l\e[26;80H \b\\g\e[8;13H\e[?25h"
+  - delay: 161
+    content: "\e[?25l\e[26;80H  \r\e[26;1H:Git\e[Ccommit\e[C-v\e[C-q\e[C%:p\e]112\a\e[2 q\r\e[26;1H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\e[21Xi\e]112\a\e[2 q\e[?25h"
+  - delay: 1823
+    content: "\e[?25l\e[H\e(B\e[m\e[38;5;167mModified STREAM variable to True in create_complet\e(B\e[m\e[38;5;223mion.py file.\r\n\e(B\e[m\e[38;5;245m# Please enter the commit message for your changes. Lines starting\r\n# with '#' will be ignored, and an empty message aborts the commit.\r\n#\e(B\e[m\e[38;5;223m\e[9X\r\n\e(B\e[m\e[38;5;245m# On branch \e(B\e[m\e[38;5;208mmain\r\n\e(B\e[m\e[38;5;245m# Your branch is ahead of '\e(B\e[m\e[38;5;208morigin/main\e(B\e[m\e[38;5;245m' by 9 commits.\r\n#   (use \"git push\" to publish your local commits)\r\n#\e(B\e[m\e[38;5;223m\e[12X\r\n\e(B\e[m\e[38;5;245m# \e(B\e[m\e[38;5;108mChanges to be committed:\r\n\e(B\e[m\e[38;5;245m#       \e(B\e[m\e[38;5;214mmodified\e(B\e[m\e[38;5;245m: \e(B\e[m\e[38;5;142m  create_completion.py\e(B\e[m\e[38;5;223m\e[11;2H\e[56X\r\n\e(B\e[m\e[38;5;245m# ------------------------ >8 ------------------------\e(B\e[m\e[38;5;223m\e[20X\r\n\e(B\e[0;7m\e[38;5;239m\e[48;5;223m.git/COMMIT_EDITMSG                                                                       \r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m os\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m configparser\e[62X\r\n\e[16X\nSTREAM = \e(B\e[m\e[38;5;208mTrue\e(B\e[m\e[38;5;223m\r\n\e[40X\n\e[30X\n\e(B\e[m\e[38;5;245m# Get config dir from environment or default to ~/.config\r\n\e(B\e[m\e[38;5;223mCONFIG_DIR = os.getenv(\e(B\e[m\e[38;5;142m'XDG_CONFIG_HOME'\e(B\e[m\e[38;5;223m, os.path.expanduser(\e(B\e[m\e[38;5;142m'~/.config'\e(B\e[m\e[38;5;223m)) \r\n\e(B\e[0;7m\e[38;5;214m\e[48;5;235mAPI_KEYS_LOCATION\e(B\e[m\e[38;5;223m = os.path.join(CONFIG_DIR, \e(B\e[m\e[38;5;142m'openaiapirc'\e(B\e[m\e[38;5;223m)\r\n\e[31X\n\e(B\e[m\e[38;5;245m# Read the organization_id and secret_key from the ini file ~/.config/openaiapirc\r\n\e(B\e[0;7m\e[38;5;237m\e[48;5;246mcreate_completion.py                                                                      \e[H\e[?25h"
+  - delay: 4577
+    content: "\e[?25l\e[26;80H\e(B\e[m\e[38;5;223mZZ\e[H\e[?25h"
+  - delay: 12
+    content: "\e[?25l\e[26;80H  \e[H\e(B\e[m\e[38;5;245m#!/usr/bin/env python3\e(B\e[m\e[38;5;223m\e[40X\r\n\e[66X\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m openai\e[54X\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m sys\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m os\e[7X\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m configparser\e[34X\r\n\e[50X\nSTREAM = \e(B\e[m\e[38;5;208mTrue\e(B\e[m\e[38;5;223m\r\n\e[26X\n\e[40X\e[11;2H\e(B\e[m\e[38;5;245m Get config dir from environment or default to ~/.config\r\n\e(B\e[m\e[38;5;223mCONFIG_DIR = os.getenv(\e(B\e[m\e[38;5;142m'XDG_CONFIG_HOME'\e(B\e[m\e[38;5;223m, os.path.expanduser(\e(B\e[m\e[38;5;142m'~/.config'\e(B\e[m\e[38;5;223m))\r\n\e(B\e[0;7m\e[38;5;214m\e[48;5;235mAPI_KEYS_LOCATION\e(B\e[m\e[38;5;223m = os.path.join(CONFIG_DIR, \e(B\e[m\e[38;5;142m'openaiapirc'\e(B\e[m\e[38;5;223m)\e[K\r\n\e[9X\n\e(B\e[m\e[38;5;245m# Read the organization_id and secret_key from the ini file ~/.config/openaiapirc\r\n# The format is:\r\n# [openai]\e(B\e[m\e[38;5;223m   \r\n\e(B\e[m\e[38;5;245m# organization_id=<your organization ID>\r\n# secret_key=<your secret key>\e(B\e[m\e[38;5;223m\r\n\e[57X\n\e(B\e[m\e[38;5;245m# If you don't see your organization ID in the file you can get it from the\r\n# OpenAI web site: https://openai.com/organizations\e(B\e[m\e[38;5;223m\e[8X\r\n\e(B\e[m\e[38;5;167mdef\e(B\e[m\e[38;5;223m \e(B\e[m\e[38;5;108mcreate_template_ini_file\e(B\e[m\e[38;5;223m():\r\n    \e(B\e[m\e[38;5;142m\"\"\"\e(B\e[m\e[38;5;223m\e[74X\r\n\e(B\e[0;7m\e[38;5;239m\e[48;5;223mcreate_completion.py                                                                      \e(B\e[m\e[38;5;223m\r\n \r\e[26;1H:redraw!|call\e[Cdelete('/tmp/nvim1LxRgv/2.edit')|call\e[Cfugitive#Resume()|checktime\e]112\a\e[2 q\r\e[26;1H\e[?25h\e[?25l\e]112\a\e[2 q\e[?25h\e[?25l\e[79X\e[?25h"
+  - delay: 42
+    content: "\e[?25l\e[8;13H\e[?25h"
+  - delay: 1106
+    content: "\e[?25l\e[26;80Hj\e[8;13H\e[?25h\e[?25l\e[26;80H \e[9;13H\e[?25h"
+  - delay: 200
+    content: "\e[?25l\e[26;80Hj\e[9;13H\e[?25h\e[?25l\e[26;80H \e[10;13H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hj\e[10;13H\e[?25h\e[?25l\e[26;80H \e[11;13H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hj\e[11;13H\e[?25h\e[?25l\e[26;80H \e[12;13H\e[?25h"
+  - delay: 514
+    content: "\e[?25l\e[26;80Hj\e[12;13H\e[?25h\e[?25l\e[26;80H \e[13;13H\e[?25h"
+  - delay: 175
+    content: "\e[?25l\e[26;80Hl\e[13;13H\e[?25h\e[?25l\e[26;80H \e[13;14H\e[?25h"
+  - delay: 200
+    content: "\e[?25l\e[26;80Hl\e[13;14H\e[?25h\e[?25l\e[26;80H \e[13;15H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;15H\e[?25h\e[?25l\e[26;80H \e[13;16H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;16H\e[?25h\e[?25l\e[26;80H \e[13;17H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hl\e[13;17H\e[?25h\e[?25l\e[26;80H \e[13;18H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;18H\e[?25h\e[?25l\e[26;80H \e[13;19H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;19H\e[?25h\e[?25l\e[26;80H \e[13;20H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;20H\e[?25h\e[?25l\e[26;80H \e[13;21H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;21H\e[?25h\e[?25l\e[26;80H \e[13;22H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;22H\e[?25h\e[?25l\e[26;80H \e[13;23H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;23H\e[?25h\e[?25l\e[26;80H \e[13;24H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;24H\e[?25h\e[?25l\e[26;80H \e[13;25H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hl\e[13;25H\e[?25h\e[?25l\e[26;80H \e[13;26H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;26H\e[?25h\e[?25l\e[26;80H \e[13;27H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hl\e[13;27H\e[?25h\e[?25l\e[26;80H \e[13;28H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hl\e[13;28H\e[?25h\e[?25l\e[26;80H \e[13;29H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;29H\e[?25h\e[?25l\e[26;80H \e[13;30H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;30H\e[?25h\e[?25l\e[26;80H \e[13;31H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;31H\e[?25h\e[?25l\e[26;80H \e[13;32H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;32H\e[?25h\e[?25l\e[26;80H \e[13;33H\e(B\e[0;1m\e[38;5;223m\e[48;5;241m(\e(B\e[m\e[38;5;223mCONFIG_DIR, \e(B\e[m\e[38;5;142m'openaiapirc'\e(B\e[0;1m\e[38;5;223m\e[48;5;241m)\e[27D\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80H\e(B\e[m\e[38;5;223ml\e[13;33H\e[?25h\e[?25l\e[26;80H \e[13;33H(CONFIG_DIR, \e(B\e[m\e[38;5;142m'openaiapirc'\e(B\e[m\e[38;5;223m)\e[26D\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;34H\e[?25h\e[?25l\e[26;80H \e[13;35H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;35H\e[?25h\e[?25l\e[26;80H \e[13;36H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;36H\e[?25h\e[?25l\e[26;80H \e[13;37H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;37H\e[?25h\e[?25l\e[26;80H \e[13;38H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;38H\e[?25h\e[?25l\e[26;80H \e[13;39H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;39H\e[?25h\e[?25l\e[26;80H \e[13;40H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hl\e[13;40H\e[?25h\e[?25l\e[26;80H \e[13;41H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hl\e[13;41H\e[?25h\e[?25l\e[26;80H \e[13;42H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;42H\e[?25h\e[?25l\e[26;80H \e[13;43H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;43H\e[?25h\e[?25l\e[26;80H \e[13;44H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;44H\e[?25h\e[?25l\e[26;80H \e[13;45H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;45H\e[?25h\e[?25l\e[26;80H \e[13;46H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;46H\e[?25h\e[?25l\e[26;80H \e[13;47H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;47H\e[?25h\e[?25l\e[26;80H \e[13;48H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;48H\e[?25h\e[?25l\e[26;80H \e[13;49H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;49H\e[?25h\e[?25l\e[26;80H \e[13;50H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;50H\e[?25h\e[?25l\e[26;80H \e[13;51H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;51H\e[?25h\e[?25l\e[26;80H \e[13;52H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hl\e[13;52H\e[?25h\e[?25l\e[26;80H \e[13;53H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hl\e[13;53H\e[?25h\e[?25l\e[26;80H \e[13;54H\e[?25h"
+  - delay: 608
+    content: "\e[?25l\e[26;80Hh\e[13;54H\e[?25h\e[?25l\e[26;80H \e[13;53H\e[?25h"
+  - delay: 431
+    content: "\e[?25l\e[26;80Hx\e[13;53H\e[?25h\e[?25l\e[26;80H \e]112\a\e[4 q\e[13;53H\e[?25h\e[?25l\e[26;80Hdl\e[13;53H\e[?25h"
+  - delay: 13
+    content: "\e[?25l\e[26;80H  \e[13;53H\e(B\e[m\e[38;5;142mpirc'\e(B\e[m\e[38;5;223m) \e]112\a\e[2 q\e[7D\e[?25h"
+  - delay: 230
+    content: "\e[?25l\e[26;80Hx\e[13;53H\e[?25h\e[?25l\e[26;80H \e]112\a\e[4 q\e[13;53H\e[?25h\e[?25l\e[26;80Hdl\e[13;53H\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[26;80H  \e[13;53H\e(B\e[m\e[38;5;142mirc'\e(B\e[m\e[38;5;223m) \e]112\a\e[2 q\e[6D\e[?25h"
+  - delay: 333
+    content: "\e[?25l\e[26;80Hx\e[13;53H\e[?25h\e[?25l\e[26;80H \e]112\a\e[4 q\e[13;53H\e[?25h\e[?25l\e[26;80Hdl\e[13;53H\e[?25h"
+  - delay: 12
+    content: "\e[?25l\e[26;80H  \e[13;53H\e(B\e[m\e[38;5;142mrc'\e(B\e[m\e[38;5;223m) \e]112\a\e[2 q\e[5D\e[?25h"
+  - delay: 689
+    content: "\e[?25l\e[26;80Hh\e[13;53H\e[?25h\e[?25l\e[26;80H \e[13;52H\e[?25h"
+  - delay: 555
+    content: "\e[?25l\e[26;80H\\\e[13;52H\e[?25h"
+  - delay: 235
+    content: "\e[?25l\e[26;80H \b\\g\e[13;52H\e[?25h"
+  - delay: 221
+    content: "\e[?25l\e[26;80H  \r\e[26;1H:Git\e[Ccommit\e[C-v\e[C-q\e[C%:p\e]112\a\e[2 q\r\e[26;1H\e[?25h"
+  - delay: 16
+    content: "\e[?25l\e[21Xi\e]112\a\e[2 q\e[?25h"
+  - delay: 1564
+    content: "\e[?25l\e[H\e(B\e[m\e[38;5;167mModified \e(B\e[0;7m\e[38;5;214m\e[48;5;235mAPI_KEYS_LOCATION\e(B\e[m\e[38;5;167m to point to the correct\e(B\e[m\e[38;5;223m config file in create_completion.py.\r\n\e(B\e[m\e[38;5;245m# Please enter the commit message for your changes. Lines starting\r\n# with '#' will be ignored, and an empty message aborts the commit.\r\n#\e(B\e[m\e[38;5;223m\e[9X\r\n\e(B\e[m\e[38;5;245m# On branch \e(B\e[m\e[38;5;208mmain\r\n\e(B\e[m\e[38;5;245m# Your branch is ahead of '\e(B\e[m\e[38;5;208morigin/main\e(B\e[m\e[38;5;245m' by 10 commits.\r\n#   (use \"git push\" to publish your local commits)\r\n#\e(B\e[m\e[38;5;223m\e[12X\r\n\e(B\e[m\e[38;5;245m# \e(B\e[m\e[38;5;108mChanges to be committed:\r\n\e(B\e[m\e[38;5;245m#       \e(B\e[m\e[38;5;214mmodified\e(B\e[m\e[38;5;245m: \e(B\e[m\e[38;5;142m  create_completion.py\e(B\e[m\e[38;5;223m\e[11;2H\e[56X\r\n\e(B\e[m\e[38;5;245m# ------------------------ >8 ------------------------\e(B\e[m\e[38;5;223m\e[20X\r\n\e(B\e[0;7m\e[38;5;239m\e[48;5;223m.git/COMMIT_EDITMSG                                                                       \r\n\e(B\e[m\e[38;5;223mSTREAM = \e(B\e[m\e[38;5;208mTrue\e(B\e[m\e[38;5;223m\r\n\e[81X\n\e[16X\e[17;3H\e(B\e[m\e[38;5;245mGet config dir from environment or default to ~/.config\r\n\e(B\e[m\e[38;5;223mCONFIG_DIR = os.getenv(\e(B\e[m\e[38;5;142m'XDG_CONFIG_HOME'\e(B\e[m\e[38;5;223m, os.path.expanduser(\e(B\e[m\e[38;5;142m'~/.config'\e(B\e[m\e[38;5;223m))\r\n\e(B\e[0;7m\e[38;5;214m\e[48;5;235mAPI_KEYS_LOCATION\e(B\e[m\e[38;5;223m = os.path.join(CONFIG_DIR, \e(B\e[m\e[38;5;142m'openairc'\e(B\e[m\e[38;5;223m)\e[21;3H\e(B\e[m\e[38;5;245mRead the organization_id and secret_key from the ini file ~/.config/openaiapirc\e[22;3HThe format is:\e(B\e[m\e[38;5;223m\e[35X\r\n\e(B\e[m\e[38;5;245m# [openai]\e(B\e[m\e[38;5;223m\e[21X\r\n\e(B\e[m\e[38;5;245m# organization_id=<your organization ID>\r\n\e(B\e[0;7m\e[38;5;237m\e[48;5;246mcreate_completion.py                                                                      \e[H\e[?25h"
+  - delay: 4033
+    content: "\e[?25l\e[26;80H\e(B\e[m\e[38;5;223mZZ\e[H\e[?25h"
+  - delay: 11
+    content: "\e[?25l\e[26;80H  \e[H\e(B\e[m\e[38;5;245m#!/usr/bin/env python3\e(B\e[m\e[38;5;223m\e[65X\r\n\e[66X\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m openai\e[54X\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m sys\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m os\e[7X\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m configparser\e[35X\r\n\e[50X\nSTREAM = \e(B\e[m\e[38;5;208mTrue\e(B\e[m\e[38;5;223m\r\n\e[26X\n\e[40X\e[11;2H\e(B\e[m\e[38;5;245m Get config dir from environment or default to ~/.config\r\n\e(B\e[m\e[38;5;223mCONFIG_DIR = os.getenv(\e(B\e[m\e[38;5;142m'XDG_CONFIG_HOME'\e(B\e[m\e[38;5;223m, os.path.expanduser(\e(B\e[m\e[38;5;142m'~/.config'\e(B\e[m\e[38;5;223m))\r\n\e(B\e[0;7m\e[38;5;214m\e[48;5;235mAPI_KEYS_LOCATION\e(B\e[m\e[38;5;223m = os.path.join(CONFIG_DIR, \e(B\e[m\e[38;5;142m'openairc'\e(B\e[m\e[38;5;223m)\e[K\r\n\e[13X\n\e(B\e[m\e[38;5;245m# Read the organization_id and secret_key from the ini file ~/.config/openaiapirc\r\n# The format is:\e[17;3H[openai]\e(B\e[m\e[38;5;223m\e[47X\r\n\e(B\e[m\e[38;5;245m# organization_id=<your organization ID>\e(B\e[m\e[38;5;223m\e[34X\r\n\e(B\e[m\e[38;5;245m# secret_key=<your secret key>\e(B\e[m\e[38;5;223m\e[26X\e[21;3H\e(B\e[m\e[38;5;245mIf you don't see your organization ID in the file you can get it from the\e(B\e[m\e[38;5;223m\e[6X\e[22;3H\e(B\e[m\e[38;5;245mOpenAI web site: https://openai.com/organizations\r\n\e(B\e[m\e[38;5;167mdef\e(B\e[m\e[38;5;223m \e(B\e[m\e[38;5;108mcreate_template_ini_file\e(B\e[m\e[38;5;223m():\r\n    \e(B\e[m\e[38;5;142m\"\"\"\e(B\e[m\e[38;5;223m\e[33X\r\n\e(B\e[0;7m\e[38;5;239m\e[48;5;223mcreate_completion.py                                                                      \e(B\e[m\e[38;5;223m\r\n \r\e[26;1H:redraw!|call\e[Cdelete('/tmp/nvim1LxRgv/4.edit')|call\e[Cfugitive#Resume()|checktime\e]112\a\e[2 q\r\e[26;1H\e[?25h\e[?25l\e]112\a\e[2 q\e[?25h\e[?25l\e[79X\e[?25h"
+  - delay: 22
+    content: "\e[?25l\e[13;52H\e[?25h"
+  - delay: 1352
+    content: "\e[?25l\e[26;80Hk\e[13;52H\e[?25h\e[?25l\e[26;80H \e[12;52H\e[?25h"
+  - delay: 199
+    content: "\e[?25l\e[26;80Hk\e[12;52H\e[?25h\e[?25l\e[26;80H \e[11;52H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hk\e[11;52H\e[?25h\e[?25l\e[26;80H \e[10;52H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hk\e[10;52H\e[?25h\e[?25l\e[26;80H \e[9;52H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hk\e[9;52H\e[?25h\e[?25l\e[26;80H \e[8;52H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hk\e[8;52H\e[?25h\e[?25l\e[26;80H \e[7;52H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hk\e[7;52H\e[?25h\e[?25l\e[26;80H \e[6;52H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hk\e[6;52H\e[?25h\e[?25l\e[26;80H \e[5;52H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hk\e[5;52H\e[?25h\e[?25l\e[26;80H \e[4;52H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hk\e[4;52H\e[?25h\e[?25l\e[26;80H \e[3;52H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hk\e[3;52H\e[?25h\e[?25l\e[26;80H \e[2;52H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hk\e[2;52H\e[?25h\e[?25l\e[26;80H \e[1;52H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hk\e[1;52H\e[?25h\e[?25l\e[26;80H \e[1;52H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hk\e[1;52H\e[?25h\e[?25l\e[26;80H \e[1;52H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hk\e[1;52H\e[?25h\e[?25l\e[26;80H \e[1;52H\e[?25h"
+  - delay: 97
+    content: "\e[?25l\e[26;80Hh\e[1;52H\e[?25h\e[?25l\e[26;80H \e[1;51H\e[?25h"
+  - delay: 199
+    content: "\e[?25l\e[26;80Hh\e[1;51H\e[?25h\e[?25l\e[26;80H \e[1;50H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hh\e[1;50H\e[?25h\e[?25l\e[26;80H \e[1;49H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;49H\e[?25h\e[?25l\e[26;80H \e[1;48H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;48H\e[?25h\e[?25l\e[26;80H \e[1;47H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;47H\e[?25h\e[?25l\e[26;80H \e[1;46H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hh\e[1;46H\e[?25h\e[?25l\e[26;80H \e[1;45H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hh\e[1;45H\e[?25h\e[?25l\e[26;80H \e[1;44H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;44H\e[?25h\e[?25l\e[26;80H \e[1;43H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;43H\e[?25h\e[?25l\e[26;80H \e[1;42H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[26;80Hh\e[1;42H\e[?25h\e[?25l\e[26;80H \e[1;41H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;41H\e[?25h\e[?25l\e[26;80H \e[1;40H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;40H\e[?25h\e[?25l\e[26;80H \e[1;39H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;39H\e[?25h\e[?25l\e[26;80H \e[1;38H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;38H\e[?25h\e[?25l\e[26;80H \e[1;37H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;37H\e[?25h\e[?25l\e[26;80H \e[1;36H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;36H\e[?25h\e[?25l\e[26;80H \e[1;35H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hh\e[1;35H\e[?25h\e[?25l\e[26;80H \e[1;34H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;34H\e[?25h\e[?25l\e[26;80H \e[1;33H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;33H\e[?25h\e[?25l\e[26;80H \e[1;32H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;32H\e[?25h\e[?25l\e[26;80H \e[1;31H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;31H\e[?25h\e[?25l\e[26;80H \e[1;30H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hh\e[1;30H\e[?25h\e[?25l\e[26;80H \e[1;29H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[26;80Hh\e[1;29H\e[?25h\e[?25l\e[26;80H \e[1;28H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;28H\e[?25h\e[?25l\e[26;80H \e[1;27H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;27H\e[?25h\e[?25l\e[26;80H \e[1;26H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;26H\e[?25h\e[?25l\e[26;80H \e[1;25H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;25H\e[?25h\e[?25l\e[26;80H \e[1;24H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[26;80Hh\e[1;24H\e[?25h\e[?25l\e[26;80H \e[1;23H\e[?25h"
+  - delay: 345
+    content: "\e[?25l\e[26;80Hh\e[1;23H\e[?25h\e[?25l\e[26;80H \e[1;22H\e[?25h"
+  - delay: 173
+    content: "\e[?25l\e[26;80Hx\e[1;22H\e[?25h\e[?25l\e[26;80H \e]112\a\e[4 q\e[1;22H\e[?25h\e[?25l\e[26;80Hdl\e[1;22H\e[?25h"
+  - delay: 13
+    content: "\e[?25l\e[26;80H  \e[1;22H \e]112\a\e[2 q\b\e[?25h"
+  - delay: 995
+    content: "\e[?25l\e[26;80H\\\e[1;22H\e[?25h"
+  - delay: 160
+    content: "\e[?25l\e[26;80H \b\\g\e[1;22H\e[?25h"
+  - delay: 182
+    content: "\e[?25l\e[26;80H  \r\e[26;1H:Git\e[Ccommit\e[C-v\e[C-q\e[C%:p\e]112\a\e[2 q\r\e[26;1H\e[?25h"
+  - delay: 15
+    content: "\e[?25l\e[21Xi\e]112\a\e[2 q\e[?25h"
+  - delay: 1453
+    content: "\e[?25l\e[H\e(B\e[m\e[38;5;167mFix shebang line in create_completion.py to use py\e(B\e[m\e[38;5;223mthon instead of python3.\r\n\e(B\e[m\e[38;5;245m# Please enter the commit message for your changes. Lines starting\r\n# with '#' will be ignored, and an empty message aborts the commit.\r\n#\e(B\e[m\e[38;5;223m\e[9X\r\n\e(B\e[m\e[38;5;245m# On branch \e(B\e[m\e[38;5;208mmain\r\n\e(B\e[m\e[38;5;245m# Your branch is ahead of '\e(B\e[m\e[38;5;208morigin/main\e(B\e[m\e[38;5;245m' by 11 commits.\r\n#   (use \"git push\" to publish your local commits)\r\n#\e(B\e[m\e[38;5;223m\e[12X\r\n\e(B\e[m\e[38;5;245m# \e(B\e[m\e[38;5;108mChanges to be committed:\r\n\e(B\e[m\e[38;5;245m#       \e(B\e[m\e[38;5;214mmodified\e(B\e[m\e[38;5;245m: \e(B\e[m\e[38;5;142m  create_completion.py\e(B\e[m\e[38;5;223m\e[11;2H\e[56X\r\n\e(B\e[m\e[38;5;245m# ------------------------ >8 ------------------------\e(B\e[m\e[38;5;223m\e[20X\r\n\e(B\e[0;7m\e[38;5;239m\e[48;5;223m.git/COMMIT_EDITMSG                                                                       \r\n\e(B\e[m\e[38;5;245m#!/usr/bin/env python\e(B\e[m\e[38;5;223m\r\n\e[81X\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m openai   \r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m sys\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m os\e[31X\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m configparser\e[11X\r\n\nSTREAM = \e(B\e[m\e[38;5;208mTrue\e(B\e[m\e[38;5;223m\e[62X\r\n\e[51X\n\e[31X\n\e(B\e[m\e[38;5;245m# Get config dir from environment or default to ~/.config\r\n\e(B\e[0;7m\e[38;5;237m\e[48;5;246mcreate_completion.py                                                                      \e[H\e[?25h"
+  - delay: 3403
+    content: "\e[?25l\e[26;80H\e(B\e[m\e[38;5;223mZZ\e[H\e[?25h"
+  - delay: 6
+    content: "\e[?25l\e[26;80H  \e[H\e(B\e[m\e[38;5;245m#!/usr/bin/env python\e(B\e[m\e[38;5;223m\e[53X\r\n\e[66X\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m openai\e[54X\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m sys\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m os\e[7X\r\n\e(B\e[m\e[38;5;109mimport\e(B\e[m\e[38;5;223m configparser\e[35X\r\n\e[50X\nSTREAM = \e(B\e[m\e[38;5;208mTrue\e(B\e[m\e[38;5;223m\r\n\e[26X\n\e[40X\e[11;2H\e(B\e[m\e[38;5;245m Get config dir from environment or default to ~/.config\r\n\e(B\e[m\e[38;5;223mCONFIG_DIR = os.getenv(\e(B\e[m\e[38;5;142m'XDG_CONFIG_HOME'\e(B\e[m\e[38;5;223m, os.path.expanduser(\e(B\e[m\e[38;5;142m'~/.config'\e(B\e[m\e[38;5;223m))\r\n\e(B\e[0;7m\e[38;5;214m\e[48;5;235mAPI_KEYS_LOCATION\e(B\e[m\e[38;5;223m = os.path.join(CONFIG_DIR, \e(B\e[m\e[38;5;142m'openairc'\e(B\e[m\e[38;5;223m)\e[K\r\n\e[21X\n\e(B\e[m\e[38;5;245m# Read the organization_id and secret_key from the ini file ~/.config/openaiapirc\r\n# The format is:\r\n# [openai]\r\n# organization_id=<your organization ID>\r\n# secret_key=<your secret key>\r\n\n# If you don't see your organization ID in the file you can get it from the\r\n# OpenAI web site: https://openai.com/organizations\r\n\e(B\e[m\e[38;5;167mdef\e(B\e[m\e[38;5;223m \e(B\e[m\e[38;5;108mcreate_template_ini_file\e(B\e[m\e[38;5;223m():\r\n    \e(B\e[m\e[38;5;142m\"\"\"\e(B\e[m\e[38;5;223m\e[50X\r\n\e(B\e[0;7m\e[38;5;239m\e[48;5;223mcreate_completion.py                                                                      \e(B\e[m\e[38;5;223m\r\n \r\e[26;1H:redraw!|call\e[Cdelete('/tmp/nvim1LxRgv/5.edit')|call\e[Cfugitive#Resume()|checktime\e]112\a\e[2 q\r\e[26;1H\e[?25h\e[?25l\e]112\a\e[2 q\e[?25h\e[?25l\e[79X\e[?25h"
+  - delay: 39
+    content: "\e[?25l\e[1;22H\e[?25h"
+  - delay: 3035
+    content: "\e[?25l\e[26;80HZZ\e[1;22H\e[?25h"
+  - delay: 22
+    content: "\e[?25l\r\e[25B\e[?25h\e[?25l\e]112\a\e[2 q\e(B\e[m\e[?25h\e[?1l\e[?1049l\e[23;0t\e[?2004l\e[?1004l\e[?25h"
+  - delay: 81
+    content: "\e[?2004h\e]0;tom@tom-ThinkPad-X1-Carbon-Gen-9: ~/test/zsh_codex\atom@tom-ThinkPad-X1-Carbon-Gen-9:~/test/zsh_codex$ "
+  - delay: 1333
+    content: "\e[?2004l\r\r\nexit\r\n"
